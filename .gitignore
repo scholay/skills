@@ -1,7 +1,8 @@
 # Public export allowlist.
 #
-# Ignore everything first, then explicitly re-include the files that belong in
-# this repository.
+# This repository is intentionally a small public slice of the private Scholay
+# codebase. Ignore everything first, then explicitly re-include the files that
+# are safe to publish.
 *
 
 # Public root files
@@ -10,8 +11,6 @@
 !README.md
 !/assets/
 !/assets/readme-hero.svg
-!/assets/diagrams/
-!/assets/diagrams/*.svg
 
 # Public skill directories
 !/corpus-building/
@@ -25,8 +24,8 @@
 !/source-intake/
 !/source-intake/**
 
-# Keep local/editor files, credentials, generated output, and source drops out
-# of Git.
+# Never publish local/editor files, credentials, generated output, or private
+# source drops even if they are copied here by accident.
 .DS_Store
 .idea/
 .vscode/

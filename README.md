@@ -12,22 +12,8 @@
   ·
   <a href="#中文">中文</a>
   ·
-  <a href="#workflow-map--流程图">Workflow Map</a>
-  ·
   <a href="https://www.scholay.com">scholay.com</a>
 </p>
-
-## Workflow Map / 流程图
-
-![Scholay Skills workflow overview](assets/diagrams/00-skills-overview.svg)
-
-| Skill | Diagram |
-| --- | --- |
-| `literature-discovery` | [Mind map](assets/diagrams/01-literature-discovery.svg) |
-| `source-intake` | [Flowchart](assets/diagrams/02-source-intake.svg) |
-| `corpus-building` | [UML-style map](assets/diagrams/03-corpus-building.svg) |
-| `evidence-review` | [State diagram](assets/diagrams/04-evidence-review.svg) |
-| `research-writing` | [Writing flow](assets/diagrams/05-research-writing.svg) |
 
 ---
 
