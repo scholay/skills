@@ -1,0 +1,42 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*secret*
+*credential*
+*token*
+
+# Dependency and build outputs
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.turbo/
+
+# Logs and temp files
+*.log
+tmp/
+temp/
+
+# Private source drops: this public repo should stay allowlist-based.
+backend/
+frontend-user/
+agent/
+docker/
+nginx/
+scripts/
+data/
+uploads/
+
