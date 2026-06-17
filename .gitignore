@@ -9,6 +9,8 @@
 !.gitignore
 !LICENSE
 !README.md
+!/assets/
+!/assets/readme-hero.svg
 
 # Public skill directories
 !/corpus-building/

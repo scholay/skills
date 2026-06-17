@@ -1,0 +1,156 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Scholay Skills</title>
+  <desc id="desc">An animated Scholay brand banner showing an academic workflow from discovery to writing.</desc>
+  <style>
+    :root {
+      --fg: #f7f7f7;
+      --muted: #b8b8b8;
+      --faint: #777777;
+      --red: #cc2222;
+      --green: #2a7a2a;
+      --amber: #d4a017;
+      --blue: #1a56db;
+      --border: #333333;
+      --surface: #1a1a1a;
+      --surface-2: #222222;
+    }
+    text {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    }
+    .display {
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      font-weight: 700;
+    }
+    .grid {
+      animation: drift 18s linear infinite;
+    }
+    .flow {
+      stroke-dasharray: 12 14;
+      animation: flow 4.8s linear infinite;
+    }
+    .pulse-a {
+      animation: pulse 4.4s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pulse-b {
+      animation: pulse 4.4s ease-in-out 1.1s infinite;
+      transform-origin: center;
+    }
+    .pulse-c {
+      animation: pulse 4.4s ease-in-out 2.2s infinite;
+      transform-origin: center;
+    }
+    .float {
+      animation: float 6s ease-in-out infinite;
+    }
+    .float-delay {
+      animation: float 6s ease-in-out 2s infinite;
+    }
+    @keyframes drift {
+      from { transform: translateX(0); }
+      to { transform: translateX(-64px); }
+    }
+    @keyframes flow {
+      to { stroke-dashoffset: -104; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: .86; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.018); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); opacity: .72; }
+      50% { transform: translateY(-10px); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .grid, .flow, .pulse-a, .pulse-b, .pulse-c, .float, .float-delay { animation: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f0f0f"/>
+      <stop offset="0.55" stop-color="#171717"/>
+      <stop offset="1" stop-color="#101413"/>
+    </linearGradient>
+    <linearGradient id="brandLine" x1="206" y1="302" x2="1092" y2="302" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#cc2222"/>
+      <stop offset="0.34" stop-color="#d4a017"/>
+      <stop offset="0.66" stop-color="#2a7a2a"/>
+      <stop offset="1" stop-color="#1a56db"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-40%" width="140%" height="180%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="gridPattern" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" stroke="#2a2a2a" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.6" fill="#3a3a3a"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+  <g class="grid" opacity="0.55">
+    <rect x="-64" y="0" width="1408" height="420" fill="url(#gridPattern)"/>
+  </g>
+  <rect x="28" y="28" width="1224" height="364" rx="22" stroke="#2a2a2a"/>
+
+  <g class="float" opacity="0.95">
+    <circle cx="1090" cy="86" r="46" fill="#cc2222" opacity="0.12"/>
+    <circle cx="1140" cy="112" r="18" fill="#d4a017" opacity="0.18"/>
+  </g>
+  <g class="float-delay" opacity="0.95">
+    <circle cx="154" cy="324" r="42" fill="#2a7a2a" opacity="0.13"/>
+    <circle cx="106" cy="282" r="14" fill="#1a56db" opacity="0.18"/>
+  </g>
+
+  <g transform="translate(86 72)">
+    <text x="0" y="36" font-size="18" font-weight="700" letter-spacing="3" fill="#d4a017">OPEN RESEARCH WORKFLOW SKILLS</text>
+    <text class="display" x="0" y="116" font-size="72" fill="#f7f7f7">Scholay Skills</text>
+    <text x="3" y="154" font-size="21" fill="#b8b8b8">Reusable academic AI workflows for research teams.</text>
+    <text x="3" y="184" font-size="17" fill="#999999">Discovery · intake · corpus · evidence · writing</text>
+    <text x="3" y="214" font-size="18" fill="#777777">文献发现、资料接收、语料构建、证据审查与研究写作的开放技能库</text>
+  </g>
+
+  <g transform="translate(772 68)">
+    <rect x="0" y="0" width="390" height="162" rx="18" fill="#1a1a1a" stroke="#333333" filter="url(#softShadow)"/>
+    <rect x="22" y="24" width="128" height="16" rx="8" fill="#cc2222"/>
+    <rect x="22" y="56" width="270" height="10" rx="5" fill="#f7f7f7" opacity="0.82"/>
+    <rect x="22" y="82" width="326" height="10" rx="5" fill="#777777" opacity="0.54"/>
+    <rect x="22" y="106" width="242" height="10" rx="5" fill="#777777" opacity="0.4"/>
+    <rect x="286" y="24" width="70" height="28" rx="14" fill="#2a7a2a" opacity="0.9"/>
+    <text x="308" y="43" font-size="12" font-weight="800" fill="#ffffff">SKILL</text>
+    <path d="M318 112C330 96 348 96 360 112C348 128 330 128 318 112Z" stroke="#d4a017" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(120 300)" filter="url(#softShadow)">
+    <path class="flow" d="M94 34H986" stroke="url(#brandLine)" stroke-width="5" stroke-linecap="round"/>
+    <g class="pulse-a">
+      <rect x="0" y="0" width="180" height="68" rx="14" fill="#1a1a1a" stroke="#333333"/>
+      <circle cx="30" cy="34" r="12" fill="#cc2222"/>
+      <text x="56" y="28" font-size="13" font-weight="800" fill="#f7f7f7">Discovery</text>
+      <text x="56" y="48" font-size="11" fill="#999999">search matrix</text>
+    </g>
+    <g class="pulse-b" transform="translate(220 0)">
+      <rect x="0" y="0" width="180" height="68" rx="14" fill="#1a1a1a" stroke="#333333"/>
+      <circle cx="30" cy="34" r="12" fill="#d4a017"/>
+      <text x="56" y="28" font-size="13" font-weight="800" fill="#f7f7f7">Intake</text>
+      <text x="56" y="48" font-size="11" fill="#999999">stable sources</text>
+    </g>
+    <g class="pulse-c" transform="translate(440 0)">
+      <rect x="0" y="0" width="180" height="68" rx="14" fill="#1a1a1a" stroke="#333333"/>
+      <circle cx="30" cy="34" r="12" fill="#2a7a2a"/>
+      <text x="56" y="28" font-size="13" font-weight="800" fill="#f7f7f7">Corpus</text>
+      <text x="56" y="48" font-size="11" fill="#999999">evidence slices</text>
+    </g>
+    <g class="pulse-a" transform="translate(660 0)">
+      <rect x="0" y="0" width="180" height="68" rx="14" fill="#1a1a1a" stroke="#333333"/>
+      <circle cx="30" cy="34" r="12" fill="#1a56db"/>
+      <text x="56" y="28" font-size="13" font-weight="800" fill="#f7f7f7">Review</text>
+      <text x="56" y="48" font-size="11" fill="#999999">citation-ready</text>
+    </g>
+    <g class="pulse-b" transform="translate(880 0)">
+      <rect x="0" y="0" width="180" height="68" rx="14" fill="#1a1a1a" stroke="#333333"/>
+      <circle cx="30" cy="34" r="12" fill="#cc2222"/>
+      <text x="56" y="28" font-size="13" font-weight="800" fill="#f7f7f7">Writing</text>
+      <text x="56" y="48" font-size="11" fill="#999999">verified drafts</text>
+    </g>
+  </g>
+</svg>
