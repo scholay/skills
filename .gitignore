@@ -1,14 +1,28 @@
-# OS / editor
+# Public export allowlist.
+#
+# This repository is intentionally a small public slice of the private Scholay
+# codebase. Ignore everything first, then explicitly re-include the files that
+# are safe to publish.
+*
+
+# Public root files
+!.gitignore
+!LICENSE
+!README.md
+
+# Public skills directory
+!skills/
+!skills/**
+
+# Never publish local/editor files, credentials, generated output, or private
+# source drops even if they are copied here by accident.
 .DS_Store
 .idea/
 .vscode/
 *.swp
 *.swo
-
-# Environment and secrets
 .env
 .env.*
-!.env.example
 *.pem
 *.key
 *.p12
@@ -16,27 +30,26 @@
 *secret*
 *credential*
 *token*
-
-# Dependency and build outputs
 node_modules/
 dist/
 build/
 coverage/
 .cache/
 .turbo/
-
-# Logs and temp files
 *.log
 tmp/
 temp/
-
-# Private source drops: this public repo should stay allowlist-based.
-backend/
-frontend-user/
-agent/
-docker/
-nginx/
-scripts/
-data/
-uploads/
-
+/scholay-agent-skills/
+/backend/
+/frontend-admin/
+/frontend-user/
+/agent/
+/docker/
+/egress/
+/images/
+/nginx/
+/prism_tex/
+/scripts/
+/tests/
+/data/
+/uploads/

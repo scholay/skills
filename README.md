@@ -12,12 +12,6 @@ Website: <https://www.scholay.com>
 skills/
   Public research workflow skills for corpus building, evidence review,
   literature discovery, source intake, and research writing.
-
-scholay-agent-skills/
-  Scholay agent-facing skills grouped by product surface:
-  - general: citation audit, journal fit, paper review
-  - prism: academic writing and LaTeX workflow skills
-  - reviewer: structured peer-review domain and quality dimensions
 ```
 
 ## Included Skill Families
@@ -27,16 +21,21 @@ scholay-agent-skills/
 - **Corpus Building**: convert source objects into addressable evidence cards.
 - **Evidence Review**: promote extracted evidence toward citation readiness.
 - **Research Writing**: draft from verified evidence while preserving citation integrity.
-- **Prism Skills**: LaTeX, academic writing, figure/table, and discipline-convention guidance.
-- **Reviewer Skills**: peer-review dimensions and domain-specific review lenses.
 
 ## What Is Intentionally Not Included
 
-This repository is a clean public export. It does not include Scholay application source code, private deployment configuration, product infrastructure, credentials, internal databases, or private project history.
+This repository is a clean public export. It does not include Scholay application source code, agent-facing skills, private deployment configuration, product infrastructure, credentials, internal databases, or private project history.
+
+## Publishing Boundary
+
+Use the private `scholar` repository as the internal source of truth when the application needs to reference skills from its `main` branch. Use this repository only for the reviewed public `skills/` export.
+
+The `.gitignore` in this repository is allowlist-based: by default, files are ignored unless they are root public docs or files under `skills/`. This releases the whole public skills directory while preventing accidental upload of private application code, agent-facing skills, environment files, generated assets, screenshots, design files, or runtime data.
+
+If a future public skill needs non-Markdown assets or scripts, place them under `skills/` after review.
 
 ## Status
 
 This repository is an early public skills release. More Scholay open-source materials will be published progressively.
 
 If these skills are useful to your research workflow, please star the repository.
-
