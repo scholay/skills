@@ -63,3 +63,4 @@ temp/
 /tests/
 /data/
 /uploads/
+!.env.example
