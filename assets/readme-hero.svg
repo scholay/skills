@@ -1,6 +1,6 @@
 <svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Scholay Skills</title>
-  <desc id="desc">An animated Scholay brand banner showing an academic workflow from discovery to writing.</desc>
+  <desc id="desc">An animated Scholay workflow banner showing an academic workflow from discovery to writing.</desc>
   <style>
     :root {
       --fg: #f7f7f7;
@@ -71,7 +71,7 @@
       <stop offset="0.55" stop-color="#171717"/>
       <stop offset="1" stop-color="#101413"/>
     </linearGradient>
-    <linearGradient id="brandLine" x1="206" y1="302" x2="1092" y2="302" gradientUnits="userSpaceOnUse">
+    <linearGradient id="workflowLine" x1="206" y1="302" x2="1092" y2="302" gradientUnits="userSpaceOnUse">
       <stop stop-color="#cc2222"/>
       <stop offset="0.34" stop-color="#d4a017"/>
       <stop offset="0.66" stop-color="#2a7a2a"/>
@@ -121,7 +121,7 @@
   </g>
 
   <g transform="translate(120 300)" filter="url(#softShadow)">
-    <path class="flow" d="M94 34H986" stroke="url(#brandLine)" stroke-width="5" stroke-linecap="round"/>
+    <path class="flow" d="M94 34H986" stroke="url(#workflowLine)" stroke-width="5" stroke-linecap="round"/>
     <g class="pulse-a">
       <rect x="0" y="0" width="180" height="68" rx="14" fill="#1a1a1a" stroke="#333333"/>
       <circle cx="30" cy="34" r="12" fill="#cc2222"/>
