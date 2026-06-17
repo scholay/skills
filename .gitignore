@@ -10,9 +10,17 @@
 !LICENSE
 !README.md
 
-# Public skills directory
-!skills/
-!skills/**
+# Public skill directories
+!/corpus-building/
+!/corpus-building/**
+!/evidence-review/
+!/evidence-review/**
+!/literature-discovery/
+!/literature-discovery/**
+!/research-writing/
+!/research-writing/**
+!/source-intake/
+!/source-intake/**
 
 # Never publish local/editor files, credentials, generated output, or private
 # source drops even if they are copied here by accident.

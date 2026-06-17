@@ -9,9 +9,11 @@ Website: <https://www.scholay.com>
 ## Repository Layout
 
 ```text
-skills/
-  Public research workflow skills for corpus building, evidence review,
-  literature discovery, source intake, and research writing.
+corpus-building/
+evidence-review/
+literature-discovery/
+research-writing/
+source-intake/
 ```
 
 ## Included Skill Families
@@ -28,11 +30,11 @@ This repository is a clean public export. It does not include Scholay applicatio
 
 ## Publishing Boundary
 
-Use the private `scholar` repository as the internal source of truth when the application needs to reference skills from its `main` branch. Use this repository only for the reviewed public `skills/` export.
+Use the private `scholar` repository as the internal source of truth when the application needs to reference skills from its `main` branch. Use this repository only for the reviewed public skill export.
 
-The `.gitignore` in this repository is allowlist-based: by default, files are ignored unless they are root public docs or files under `skills/`. This releases the whole public skills directory while preventing accidental upload of private application code, agent-facing skills, environment files, generated assets, screenshots, design files, or runtime data.
+The `.gitignore` in this repository is allowlist-based: by default, files are ignored unless they are root public docs or files under the reviewed public skill directories. This releases the public skill folders directly at the repository root while preventing accidental upload of private application code, agent-facing skills, environment files, generated assets, screenshots, design files, or runtime data.
 
-If a future public skill needs non-Markdown assets or scripts, place them under `skills/` after review.
+If a future public skill needs non-Markdown assets or scripts, place them inside its reviewed public skill directory.
 
 ## Status
 
