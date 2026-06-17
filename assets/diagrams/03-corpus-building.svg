@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Corpus building UML diagram</title>
+  <desc id="desc">A UML-style diagram showing source cards, text slices, image slices, annotations, quality scoring, and validated indexes.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto"><path d="M2 2 L12 7 L2 12 Z" fill="#111"/></marker>
+    <style>.h{font:800 42px Inter,PingFang SC,Arial,sans-serif;fill:#111}.s{font:500 20px Inter,PingFang SC,Arial,sans-serif;fill:#8b8b8b}.t{font:800 28px Inter,PingFang SC,Arial,sans-serif;fill:#111}.b{font:500 19px Inter,PingFang SC,Arial,sans-serif;fill:#666}.mono{font:700 20px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#fff}.code{font:700 18px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#333}</style>
+  </defs>
+  <rect width="1080" height="1920" fill="#fafafa"/>
+  <g transform="translate(72 72)"><rect width="62" height="62" rx="12" fill="#111"/><text x="31" y="40" text-anchor="middle" class="mono">03</text><text x="86" y="43" class="h">语料构建 · UML</text><text x="0" y="104" class="s">PDF 文件不是语料；可追踪的证据单元才是语料。</text></g>
+  <g transform="translate(174 240)">
+    <rect width="732" height="202" rx="26" fill="#111"/>
+    <text x="48" y="70" font-family="Inter,PingFang SC,Arial,sans-serif" font-size="32" font-weight="850" fill="#fff">SourceCard</text>
+    <line x1="48" y1="92" x2="684" y2="92" stroke="#444"/>
+    <text x="48" y="130" class="code" fill="#f5f5f5">source_id · title · language · file_path</text>
+    <text x="48" y="166" class="code" fill="#f5f5f5">ocr_status · translation_status · topics</text>
+  </g>
+  <path d="M410 456 L310 584" stroke="#111" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+  <path d="M670 456 L770 584" stroke="#111" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+  <g transform="translate(88 602)">
+    <rect width="414" height="318" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="44" cy="54" r="14" fill="#dc2828"/><text x="72" y="64" class="t">TextSlice</text>
+    <line x1="44" y1="88" x2="370" y2="88" stroke="#ececec"/>
+    <text x="44" y="130" class="code">SLC-####-T###</text>
+    <text x="44" y="168" class="b">original text</text>
+    <text x="44" y="204" class="b">OCR-cleaned text</text>
+    <text x="44" y="240" class="b">working translation</text>
+    <text x="44" y="276" class="b">verification status</text>
+  </g>
+  <g transform="translate(578 602)">
+    <rect width="414" height="318" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="44" cy="54" r="14" fill="#2c8735"/><text x="72" y="64" class="t">ImageSlice</text>
+    <line x1="44" y1="88" x2="370" y2="88" stroke="#ececec"/>
+    <text x="44" y="130" class="code">SLC-####-I###</text>
+    <text x="44" y="168" class="b">page / figure path</text>
+    <text x="44" y="204" class="b">image type</text>
+    <text x="44" y="240" class="b">visual description status</text>
+    <text x="44" y="276" class="b">caption readiness</text>
+  </g>
+  <path d="M295 940 L295 1038" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M785 940 L785 1038" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(88 1056)">
+    <rect width="414" height="256" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="44" cy="54" r="14" fill="#e6ad13"/><text x="72" y="64" class="t">QualityScore</text>
+    <text x="44" y="122" class="b">OCR noise · script mismatch</text>
+    <text x="44" y="158" class="b">translation presence</text>
+    <text x="44" y="194" class="code">P1 / P2 / P3 / OK</text>
+  </g>
+  <g transform="translate(578 1056)">
+    <rect width="414" height="256" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="44" cy="54" r="14" fill="#111"/><text x="72" y="64" class="t">Annotation</text>
+    <text x="44" y="122" class="b">AI 只记录判断</text>
+    <text x="44" y="158" class="b">不覆盖 source says</text>
+    <text x="44" y="194" class="b">视觉描述看像素</text>
+  </g>
+  <path d="M540 1330 L540 1432" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(138 1450)">
+    <rect width="804" height="212" rx="28" fill="#111"/>
+    <text x="54" y="72" font-family="Inter,PingFang SC,Arial,sans-serif" font-size="32" font-weight="850" fill="#fff">Validated Corpus Index</text>
+    <text x="54" y="124" class="b" fill="#d8d8d8">每个切片有索引行；无重复 ID；无缺失文件引用。</text>
+    <text x="54" y="164" class="b" fill="#d8d8d8">下游视图从已验证语料重建，不从缓存状态推断。</text>
+  </g>
+  <text x="540" y="1754" text-anchor="middle" class="s">separation rule: slice = source says · annotation = AI thinks</text>
+</svg>

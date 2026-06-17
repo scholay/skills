@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Research writing flow</title>
+  <desc id="desc">A flow diagram for writing academic manuscripts from reviewed evidence and verified citations.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto"><path d="M2 2 L12 7 L2 12 Z" fill="#111"/></marker>
+    <style>.h{font:800 42px Inter,PingFang SC,Arial,sans-serif;fill:#111}.s{font:500 20px Inter,PingFang SC,Arial,sans-serif;fill:#8b8b8b}.t{font:820 29px Inter,PingFang SC,Arial,sans-serif;fill:#111}.b{font:500 20px Inter,PingFang SC,Arial,sans-serif;fill:#666}.mono{font:700 20px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#fff}.word{font:700 58px Georgia,Times New Roman,serif}</style>
+  </defs>
+  <rect width="1080" height="1920" fill="#fafafa"/>
+  <g transform="translate(72 72)"><rect width="62" height="62" rx="12" fill="#111"/><text x="31" y="40" text-anchor="middle" class="mono">05</text><text x="86" y="43" class="h">研究写作 · Flow</text><text x="0" y="104" class="s">从已核验证据写作，不从记忆写作；最终文稿不暴露内部流程词。</text></g>
+  <g transform="translate(110 240)">
+    <rect width="860" height="164" rx="28" fill="#111"/>
+    <text x="54" y="98" class="word"><tspan fill="#dc2828">S</tspan><tspan fill="#2c8735">c</tspan><tspan fill="#e6ad13">h</tspan><tspan fill="#f5f5f5">o</tspan><tspan fill="#dc2828">l</tspan><tspan fill="#2c8735">a</tspan><tspan fill="#e6ad13">y</tspan></text>
+    <text x="54" y="136" class="s" fill="#999">evidence-grounded manuscript system</text>
+  </g>
+  <g transform="translate(120 508)">
+    <rect width="840" height="150" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="52" cy="75" r="18" fill="#dc2828"/>
+    <text x="90" y="64" class="t">Chapter Outline</text>
+    <text x="90" y="102" class="b">问题 / 论点 / 证据 / 图表 / citekeys 先对齐</text>
+  </g>
+  <path d="M540 676 L540 740" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(120 754)">
+    <rect width="840" height="174" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="52" cy="87" r="18" fill="#2c8735"/>
+    <text x="90" y="72" class="t">Grouped Evidence</text>
+    <text x="90" y="110" class="b">收集同一小节的 reviewed / quote_ready 证据</text>
+    <text x="90" y="144" class="b">识别它们共同支持什么判断</text>
+  </g>
+  <path d="M540 946 L540 1010" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(120 1024)">
+    <rect width="840" height="174" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="52" cy="87" r="18" fill="#e6ad13"/>
+    <text x="90" y="72" class="t">Draft With Citations</text>
+    <text x="90" y="110" class="b">用研究者自己的分析语言综合，不留 [CITE]</text>
+    <text x="90" y="144" class="b">直接引用必须 quote_ready</text>
+  </g>
+  <path d="M540 1216 L540 1280" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(120 1294)">
+    <rect width="840" height="174" rx="24" fill="#fff" stroke="#e5e5e5"/>
+    <circle cx="52" cy="87" r="18" fill="#111"/>
+    <text x="90" y="72" class="t">Bibliography + Figures</text>
+    <text x="90" y="110" class="b">citekey 冻结；图像来自 canonical source image</text>
+    <text x="90" y="144" class="b">裁一个有意义的图像元素，记录来源路径</text>
+  </g>
+  <path d="M540 1486 L540 1550" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(120 1564)">
+    <rect width="840" height="184" rx="24" fill="#111"/>
+    <circle cx="52" cy="92" r="18" fill="#fff"/>
+    <text x="90" y="78" font-family="Inter,PingFang SC,Arial,sans-serif" font-size="29" font-weight="820" fill="#fff">Integrity Check + Output</text>
+    <text x="90" y="118" class="b" fill="#d8d8d8">每个主张有引用；每个引用可解析；每张图有来源链。</text>
+    <text x="90" y="152" class="b" fill="#d8d8d8">LaTeX / Markdown / Word 为源，PDF/DOCX/HTML 为导出物。</text>
+  </g>
+</svg>
